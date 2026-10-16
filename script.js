@@ -87,7 +87,7 @@ async function start() {
     const data = await loadData();
     const parts = splitMenu(data.menu);
     showWait(estimateWait(data.line), data.line);
-    showMenu(data.menu);
+    showMenu(parts.available);
     showSoldOut(parts.soldOut);
     showUpdated(data.line);
   } catch (err) {
