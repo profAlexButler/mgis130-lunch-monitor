@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lunch line monitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Our Food Truck</h1>
+    <p class="sub">The lunch line, right now</p>
+  </header>
+
+  <section id="wait" class="wait">
+    <p class="wait-label">Wait from the back of the line</p>
+    <p id="wait-time" class="wait-time">...</p>
+    <p id="wait-detail" class="wait-detail"></p>
+  </section>
+
+  <main class="boards">
+    <section class="board">
+      <h2>On the menu</h2>
+      <ul id="menu"></ul>
+    </section>
+    <section class="board soldout">
+      <h2>Sold out today</h2>
+      <ul id="soldout"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p id="updated"></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
